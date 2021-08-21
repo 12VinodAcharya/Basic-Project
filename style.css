@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.container-box{
+   display: flex;  
+   justify-content: center;
+   align-items: center;
+   background-color: rgb(37, 35, 35);
+}
+body{
+    background-color: rgb(151, 146, 146);
+}
+p::first-letter{
+    color: rgb(226, 198, 43);
+    font-size: 3em;
+   
+}
+p{
+    color: rgb(253, 164, 227);
+    font-size:1.3em;
+    
+}
+
+#board{
+    display: grid;
+    grid-template-columns: repeat(19,1fr);
+    grid-template-rows: repeat(19,1fr);
+    width: 90vmin;
+    height: 80vh;
+    border: 2px solid rgb(117, 34, 34);
+    border-radius: 12px;
+    background:linear-gradient(to top left, rgb(145, 212, 145),rgb(176, 185, 106),rgb(226, 107, 107))
+}
+
+
+
+#scoreBox{
+    position: absolute;
+    top: 95%;
+    right: 35%;
+    font-size:1.5em;
+    font-style: italic;
+    font-weight: 700;
+}
+#highScoreBox{
+    position: absolute;
+    top: 95%;
+    right: 5%;
+    font-size:1.5em;
+    font-style: italic;
+    font-weight: 700;
+}
+.snake{
+    background:linear-gradient(rgb(187, 106, 0),rgb(219, 36, 82));
+   border: 5px solid rgb(104, 99, 99);
+   border-radius: 13px;
+}
+
+.food{
+    background: linear-gradient(rgb(187, 106, 0),rgb(219, 36, 82));
+    border: 5px solid rgb(109, 101, 101);
+    border-radius: 13px;
+     
+}
+
+.head{
+    background: linear-gradient(rgb(190, 78, 190),rgb(7, 131, 7),rgb(167, 170, 13));
+    border:5px solid black;
+    border-radius: 5px;
+}
