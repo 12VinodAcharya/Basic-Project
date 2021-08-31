@@ -1,0 +1,99 @@
+.container {
+    background-image: url(../Images/snake.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: .5rem;
+    background-clip: padding-box;
+    background-origin: content-box;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    overflow: hidden;
+    user-select: none;
+    user-zoom: none;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background: linear-gradient(#ffb9ff, #add0ad, #754200);
+    height: 60px;
+    margin: 0px;
+    font-size: 1.2rem;
+    font-family: inherit;
+    color: #494961;
+    font-family: inherit;
+    color: #494961;
+}
+
+.board {
+    background: linear-gradient(#f3eea8, #bbc8a2, #c983b4);
+    max-width: 95vmax;
+    max-height: 95vmax;
+    margin-bottom: 2.5rem;
+    margin-left: 2.5rem;
+    margin-top: 1rem;
+    border-radius: 1rem;
+    border: 50px groove rgb(70, 112, 70);
+    grid-template-columns: repeat(20, 1fr);
+    grid-template-rows: repeat(20, 1fr);
+    display: grid;
+    width: 94vh;
+    height: 85vh;
+    overflow: hidden;
+}
+
+.score-container {
+    position: relative;
+}
+
+#scoreBox {
+    position: absolute;
+    left: 30rem;
+    font-size: 1.3rem;
+    top: -10rem;
+    white-space: nowrap;
+}
+
+#highScoreBox {
+    position: absolute;
+    left: 30rem;
+    font-size: 1.3rem;
+    top: -7rem;
+    word-break: keep-all;
+    white-space: nowrap;
+}
+
+.snake {
+    background: linear-gradient(rgb(212, 0, 255), rgb(10, 165, 74), lime);
+    border-radius: 1.2rem;
+    border: .4rem solid white;
+}
+
+.food {
+    background-color: red;
+    border-radius: 1rem;
+    border: 5px solid black;
+}
+
+.head {
+    background-color: purple;
+    border-radius: .6rem;
+    border: 7px solid rgb(14, 141, 2);
+}
