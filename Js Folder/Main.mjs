@@ -1,4 +1,4 @@
-// Game varibles:
+// Game variables:
 const foodSound = new Audio('../music/food.mp3');
 const gameoverSound = new Audio('../music/gameover.mp3');
 const bgMusic = new Audio('../music/game-music.mp3');
